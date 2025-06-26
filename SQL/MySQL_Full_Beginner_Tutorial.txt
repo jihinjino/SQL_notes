@@ -78,6 +78,10 @@ DROP DATABASE SchoolDB;
 ----------------
 -- Assume another table: Marks(ID INT, Score INT)
 
+Notes:
+Inner join is same as join
+
+
 INNER JOIN:
 SELECT Students.Name, Marks.Score
 FROM Students
@@ -145,3 +149,17 @@ EXIT;
 - Use `IF NOT EXISTS` and `IF EXISTS` to avoid errors when creating/dropping.
 
 Happy Learning MySQL!
+
+
+
+
+
+Notes:
+Joins
+----------
+
+ASSUME EMPLOYEE has (Reg_num, Name, Age) and DETAILS has(Reg_num, Breach_name)
+
+Nickname for tables:
+SELECT e.reg_num, e.name, e.age, d.branch_name FROM employee e join details d ON e.reg_num =d.reg_num;
+
